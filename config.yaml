@@ -1,5 +1,5 @@
-baseURL: https://example.org/
-languageCode: en-us
+baseURL: "/"
+relativeurls: true
 defaultContentLanguage: en-us
 title: Hugo tranquilpeak theme
 theme: hugo-tranquilpeak-theme
