@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>personal on Hugo tranquilpeak theme</title>
+    <link>/categories/personal/</link>
+    <description>Recent content in personal on Hugo tranquilpeak theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>liuyuu96@126.com (刘宇)</managingEditor>
+    <webMaster>liuyuu96@126.com (刘宇)</webMaster>
+    <lastBuildDate>Mon, 06 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/personal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第一次博客</title>
+      <link>/2021/09/index.en-us/</link>
+      <pubDate>Mon, 06 Sep 2021 00:00:00 +0000</pubDate>
+      <author>liuyuu96@126.com (刘宇)</author>
+      <guid>/2021/09/index.en-us/</guid>
+      <description>1 文本2 引用2.1 中文引用2.2 shortcode引用3 代码块3.1 类似详细信息的结果，可以把过长的结果保留，感兴趣的可以自行查看。3.2 插入代码，自动绘图。3.3 表格这是刘宇写的第一篇博客，作为实验作品。本文于2022-06-06更新。如发现问题或者有建议，欢迎找本人，找不到就没办法了。
+1 文本文本调整无非几个：
+字体字号颜色背景色首先我介绍字体的调整。字体的调整，要考虑到是否存在这类字体，并且在不同的blog中存在不兼容的可能性。在此我建议大家参考谢益辉的方案。以下我举几个例子：
+微软雅黑：刘宇宋体：刘宇黑体: 刘宇楷体: 刘宇此外我就不再举例。还有字体大小调整和颜色。而本个Hugo模板有关于hightext的设定，主要有11类。
+ArgumentDescriptionClassesclasses :redgreenbluepurpleorangeyellowcyanprimarysuccesswarningdanger高亮红色高亮绿色高亮紫色高亮黄色以上是使用shortcode生成的，还可以之间用html的代码生成，例如：刘宇</description>
+    </item>
+    
+  </channel>
+</rss>

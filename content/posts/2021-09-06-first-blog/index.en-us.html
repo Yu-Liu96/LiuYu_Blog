@@ -1,0 +1,302 @@
+---
+title: 第一次博客
+author: LiuYu
+date: '2021-09-06'
+slug: index.en-us
+categories: ['personal']
+tags: []
+coverImage: /posts/2021-09-06-first-blog/index.en-us_files/BingWallpaper.jpg
+thumbnailImagePosition: bottom
+thumbnailImage: /posts/2021-09-06-first-blog/index.en-us_files/BingWallpaper.jpg
+output:
+  blogdown::html_page:
+    number_sections: true
+    toc: true
+description: "这是刘宇第一次博客，同样是关于blogdown和Hugo一些代码展示，后期如果有新的东西会再加进来."   
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="/rmarkdown-libs/pymjs/pym.v1.js"></script>
+<script src="/rmarkdown-libs/widgetframe-binding/widgetframe.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#文本"><span class="toc-section-number">1</span> 文本</a></li>
+<li><a href="#引用"><span class="toc-section-number">2</span> 引用</a>
+<ul>
+<li><a href="#中文引用"><span class="toc-section-number">2.1</span> 中文引用</a></li>
+<li><a href="#shortcode引用"><span class="toc-section-number">2.2</span> shortcode引用</a></li>
+</ul></li>
+<li><a href="#代码块"><span class="toc-section-number">3</span> 代码块</a>
+<ul>
+<li><a href="#类似详细信息的结果可以把过长的结果保留感兴趣的可以自行查看"><span class="toc-section-number">3.1</span> 类似详细信息的结果，可以把过长的结果保留，感兴趣的可以自行查看。</a></li>
+<li><a href="#插入代码自动绘图"><span class="toc-section-number">3.2</span> 插入代码，自动绘图。</a></li>
+<li><a href="#表格"><span class="toc-section-number">3.3</span> 表格</a></li>
+</ul></li>
+</ul>
+</div>
+
+<p>这是刘宇写的第一篇博客，作为实验作品。本文于2022-06-06更新。如发现问题或者有建议，欢迎找本人，找不到就没办法了。</p>
+<div id="文本" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> 文本</h1>
+<p>文本调整无非几个：</p>
+<ul>
+<li>字体</li>
+<li>字号</li>
+<li>颜色</li>
+<li>背景色</li>
+</ul>
+<p>首先我介绍字体的调整。字体的调整，要考虑到是否存在这类字体，并且在不同的blog中存在不兼容的可能性。在此我建议大家参考<a href="">谢益辉</a>的方案。以下我举几个例子：</p>
+<ol style="list-style-type: decimal">
+<li>微软雅黑：<font face="Microsoft YaHei">刘宇</font></li>
+<li>宋体：<font face="Songti SC">刘宇</font></li>
+<li>黑体: <font face="SimHei">刘宇</font></li>
+<li>楷体: <font face="KaiTi">刘宇</font></li>
+</ol>
+<p>此外我就不再举例。还有字体<font size="5">大</font><font size="2">小</font>调整和<font color="red">颜色</font>。
+而本个Hugo模板有关于<code>hightext</code>的设定，主要有11类。</p>
+<table>
+<thead>
+<tr>
+<th>
+Argument
+</th>
+<th>
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Classes
+</td>
+<td>
+<strong>classes</strong> :
+<ul>
+<li>
+red
+</li>
+<li>
+green
+</li>
+<li>
+blue
+</li>
+<li>
+purple
+</li>
+<li>
+orange
+</li>
+<li>
+yellow
+</li>
+<li>
+cyan
+</li>
+<li>
+primary
+</li>
+<li>
+success
+</li>
+<li>
+warning
+</li>
+<li>
+danger
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>{{< hl-text "red" >}}高亮红色{{< /hl-text >}}</p>
+<p>{{< hl-text "green" >}}高亮绿色{{< /hl-text >}}</p>
+<p>{{< hl-text "purple" >}}高亮紫色{{< /hl-text >}}</p>
+<p>{{< hl-text "yellow" >}}高亮黄色{{< /hl-text >}}</p>
+<p>以上是使用<code>shortcode</code>生成的，还可以之间用<code>html</code>的代码生成，例如：
+<span style="background: yellow;">刘宇</span></p>
+</div>
+<div id="引用" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> 引用</h1>
+<div id="中文引用" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> 中文引用</h2>
+<p>我首先在这里引用一篇我最喜欢的诗词。</p>
+<blockquote>
+<p class="center">
+定风波
+</p>
+<p class="center" style="font-size: 20px;">
+北宋 苏轼
+</p>
+<p class="normal">
+(三月七日沙湖道中遇雨。雨具先去，同行皆狼狈，余独不觉。已而遂晴，故作此词)<br>
+<br>
+莫听穿林打叶声，何妨吟啸且徐行。竹杖芒鞋轻胜马，谁怕？ 一蓑烟雨任平生。<br>
+料峭春风吹酒醒，微冷，山头斜照却相迎。回首向来萧瑟处，归去，也无风雨也无晴。<br>
+</p>
+</blockquote>
+<p>这里调整了标题<code>定风波</code>和作者<code>北宋 苏轼</code>的字号和居中对齐，并且把默认的中文格式进行调整。</p>
+<p>下面是不调整的状态：</p>
+<blockquote>
+<p>定风波<br>
+北宋 苏轼<br>
+(三月七日沙湖道中遇雨。雨具先去，同行皆狼狈，余独不觉。已而遂晴，故作此词)<br>
+<br>
+莫听穿林打叶声，何妨吟啸且徐行。竹杖芒鞋轻胜马，谁怕？ 一蓑烟雨任平生。<br>
+料峭春风吹酒醒，微冷，山头斜照却相迎。回首向来萧瑟处，归去，也无风雨也无晴。<br></p>
+</blockquote>
+</div>
+<div id="shortcode引用" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> shortcode引用</h2>
+<p>下面的引用方法是基于本Hugo模板的<code>shortcode</code>进行的引用，如果存在shortcode，同样适用于该方法。那么本文方法是使用<code>`blogdown::shortcode_html()`</code>。</p>
+<table>
+<thead>
+<tr>
+<th>
+Argument
+</th>
+<th>
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Classes
+</td>
+<td>
+<ul>
+<li>
+info
+</li>
+<li>
+success
+</li>
+<li>
+warning
+</li>
+<li>
+danger
+</li>
+<li>
+no-icon
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>{{< alert "info" >}}
+hello，这是消息的引用。
+{{< /alert >}}</p>
+<p>{{< alert "success" >}}
+hello，这是成功的引用。
+{{< /alert >}}</p>
+<p>{{< alert "warning" >}}
+hello，这是警告的引用。
+{{< /alert >}}</p>
+<p>{{< alert "danger" >}}
+hello，这是危险的引用。
+{{< /alert >}}</p>
+<p>{{< alert "danger" "no-icon" >}}
+hello，这是危险无标签的引用。
+{{< /alert >}}</p>
+</div>
+</div>
+<div id="代码块" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> 代码块</h1>
+<div id="类似详细信息的结果可以把过长的结果保留感兴趣的可以自行查看" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> 类似详细信息的结果，可以把过长的结果保留，感兴趣的可以自行查看。</h2>
+<pre class="r"><code>head(mtcars)</code></pre>
+<details>
+<pre class="r"><code>head(mtcars)
+##                    mpg cyl disp  hp drat    wt  qsec vs am gear carb
+## Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
+## Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
+## Datsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
+## Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
+## Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
+## Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre>
+</details>
+<p>上面是参照了<code>html</code>的方案，在代码前加上<code>&lt;details&gt;</code>和代码后加上<code>&lt;/details&gt;</code>。还有另外的方案，这是参考了<a href="https://www.thetopsites.net/projects/knitr/blogdown.shtml">别人的方法</a>.</p>
+<pre class="r"><code>head(mtcars)</code></pre>
+<details>
+<p>mpg cyl disp hp drat wt qsec vs am gear carb
+Mazda RX4 21.0 6 160 110 3.90 2.620 16.46 0 1 4 4
+Mazda RX4 Wag 21.0 6 160 110 3.90 2.875 17.02 0 1 4 4
+Datsun 710 22.8 4 108 93 3.85 2.320 18.61 1 1 4 1
+Hornet 4 Drive 21.4 6 258 110 3.08 3.215 19.44 1 0 3 1
+Hornet Sportabout 18.7 8 360 175 3.15 3.440 17.02 0 0 3 2
+Valiant 18.1 6 225 105 2.76 3.460 20.22 1 0 3 1</p>
+</details>
+</div>
+<div id="插入代码自动绘图" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> 插入代码，自动绘图。</h2>
+<pre class="r"><code>par(mar = c(4, 4, .5, .1))
+plot(mpg ~ hp, data = mtcars, pch = 19)</code></pre>
+<p><img src="/posts/2021-09-06-first-blog/index.en-us_files/figure-html/unnamed-chunk-4-1.png" width="480" /></p>
+<p>下面插入♥的代码图片：</p>
+<div class="figure"><span id="fig:unnamed-chunk-5"></span>
+<img src="/posts/2021-09-06-first-blog/index.en-us_files/figure-html/unnamed-chunk-5-1.png" alt="A nice image." width="50%" />
+<p class="caption">
+Figure 3.1: A nice image.
+</p>
+</div>
+</div>
+<div id="表格" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> 表格</h2>
+<p>我这边使用的<code>DT</code>这个包来进行渲染，但是同样存在<a href="https://stackoverflow.com/questions/43594039/dt-package-not-working-with-blogdown-using-hugo-future-imperfect-theme">问题</a>,根据<a href="https://bookdown.org/yihui/blogdown/html-widgets.html">谢益辉</a>提供的两个解决方案，我采用了<code>*widgeframe* package</code></p>
+<div id="htmlwidget-1" style="width:100%;height:100%;" class="widgetframe html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"url":"/posts/2021-09-06-first-blog/index.en-us_files/figure-html//widgets/widget_unnamed-chunk-6.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<style type="text/css">
+.center{
+  text-align: center;
+  font-family: 'Source Han Serif', 'Songti SC', 'Microsoft YaHei';
+  font-style: normal;
+  font-size: 30px;
+}
+
+.normal{
+  font-family: 'Source Han Serif', 'Songti SC', 'Microsoft YaHei';
+  font-style: normal;
+}
+
+table {
+width: 100%; /*表格宽度*/
+max-width: 65em; /*表格最大宽度，避免表格过宽*/
+border: 1px solid #dedede; /*表格外边框设置*/
+margin: 15px auto; /*外边距*/
+border-collapse: collapse; /*使用单一线条的边框*/
+empty-cells: show; /*单元格无内容依旧绘制边框*/
+}
+table th,
+table td {
+height: 35px; /*统一每一行的默认高度*/
+border: 1px solid #dedede; /*内部边框样式*/
+padding: 0 10px; /*内边距*/
+}
+table th {
+font-weight: bold; /*加粗*/
+text-align: center !important; /*内容居中，加上 !important 避免被 Markdown 样式覆盖*/
+background: rgba(158,188,226,0.2); /*背景色*/
+}
+table tbody tr:nth-child(2n) {
+background: rgba(158,188,226,0.12);
+}
+table tr:hover {
+background: #efefef;
+}
+table th {
+white-space: nowrap; /*表头内容强制在一行显示*/
+}
+table td {
+white-space: nowrap;
+}
+</style>
+</div>
+</div>
