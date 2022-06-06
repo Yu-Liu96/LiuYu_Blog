@@ -1,0 +1,13 @@
+---
+title: "Linux_learning"
+author: "LiuYu"
+date: '2021-09-21'
+categories: Computer Sciences
+tags: Linux
+---
+
+# 文件
+# 文件拥有及权限概念
+
+
+

@@ -2,22 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
+    <loc>/categories/article-reading/</loc>
+    <lastmod>2021-09-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/2020/12/hello-r-markdown/</loc>
-    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
+    <loc>/categories/</loc>
+    <lastmod>2021-09-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/</loc>
+    <lastmod>2021-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2021-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2021-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/2021/09/index.en-us-theacidityofatmosphericparticlesandclouds/</loc>
+    <lastmod>2021-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/wsis/</loc>
+    <lastmod>2021-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/2020/12/hello-r-markdown/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
   </url><url>
     <loc>/categories/personal/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
   </url><url>
     <loc>/tags/plot/</loc>
-    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
-  </url><url>
-    <loc>/posts/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
   </url><url>
     <loc>/categories/r/</loc>
@@ -29,10 +41,7 @@
     <loc>/tags/regression/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
-  </url><url>
-    <loc>/2020/12/index.en-us/</loc>
+    <loc>/2020/12/%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
   </url><url>
     <loc>/tags/disqus/</loc>

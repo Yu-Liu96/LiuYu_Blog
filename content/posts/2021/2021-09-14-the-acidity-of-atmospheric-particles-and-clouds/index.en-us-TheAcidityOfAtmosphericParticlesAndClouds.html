@@ -1,0 +1,111 @@
+---
+title: The acidity of atmospheric particles and clouds
+author: Liuyu
+date: '2021-09-14'
+slug: index.en-us-TheAcidityOfAtmosphericParticlesAndClouds
+output:
+  blogdown::html_page:
+    number_sections: true
+    toc: true
+categories:
+  - article reading
+tags:
+  - WSIs
+description: "这是一篇关于大气颗粒物和云的酸碱度的文章，本文综述和综合了目前关于大气凝聚态，特别是颗粒物和云滴酸度的研究现状，还估计酸度和pH值的方法，标准命名法，基于观测的pH值估算，以及本地和全球规模pH的模型计算。"   
+header-includes:
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#ph值的定义和ph值的标度"><span class="toc-section-number">1</span> pH值的定义和pH值的标度</a>
+<ul>
+<li><a href="#ph值定义酸度质量浓度molality"><span class="toc-section-number">1.1</span> pH值定义酸度——质量浓度（molality）</a></li>
+<li><a href="#ph值体积浓度molarity"><span class="toc-section-number">1.2</span> pH值——体积浓度（molarity）</a></li>
+<li><a href="#ph近似估算"><span class="toc-section-number">1.3</span> pH近似估算</a></li>
+<li><a href="#酸度和ph"><span class="toc-section-number">1.4</span> 酸度和pH</a></li>
+<li><a href="#计算ph值的热力学模型"><span class="toc-section-number">1.5</span> 计算pH值的热力学模型</a></li>
+</ul></li>
+</ul>
+</div>
+
+<p>本文于2022-06-06更新。原文发表于<a href="https://doi.org/10.5194/acp-20-4809-2020">ACP</a>。</p>
+<div id="ph值的定义和ph值的标度" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> pH值的定义和pH值的标度</h1>
+<p>pH值一般不直接进行测量，通常是通过热力学模型（thermodynamic models ）的估算。并且pH数值的差异与浓度单位的差异有关。</p>
+<div id="ph值定义酸度质量浓度molality" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> pH值定义酸度——质量浓度（molality）</h2>
+<p>根据<strong>国际纯粹与应用化学联合会</strong>（International Union of Pure and Applied Chemistry,IUPAC）的定义：{{< hl-text "red" >}}溶液的酸碱度是由溶解的H<sup>+</sup>热力学活度所定义{{< /hl-text >}}。</p>
+<span class="math display">\[\begin{aligned}
+
+\text{pH} =&amp; -\log_{10}(a_{\text{H}^+}) \\
+          =&amp; -\log_{10}(\frac{m_{\text{H}^+}}{m^\theta}\gamma_{\text{H}^+})  
+          
+\end{aligned}\]</span>
+<p>该定义是一个传统型的概念性定义，因为他只涉及到单个离子的活度（activity coefficient）。而在实际中{{< hl-text "red" >}}溶液是由所有的阴离子和阳离子（cation， anion）所共同组成的一个电中性的体现（a overall electroneutral system）{{< /hl-text >}}</p>
+</div>
+<div id="ph值体积浓度molarity" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> pH值——体积浓度（molarity）</h2>
+<span class="math display">\[\begin{aligned}
+
+\text{pH} =&amp; -\log_{10}(a_{\text{H}^+}^{(c)}) \\
+          =&amp; -\log_{10}(\frac{m_{\text{H}^+}}{m^\theta}\gamma_{\text{H}^+}^{(c)})
+          
+\end{aligned}\]</span>
+<p><strong>Clegg和Wexler</strong>所研发的<strong>E-AIM(Extended Aerosol Inorganics Models)</strong>所采用的方法是就是摩尔体积浓度法。</p>
+<span class="math display">\[\begin{aligned}
+
+\text{pH}_x =&amp; -\log_{10}(a_{\text{H}^+}^{(x)}) \\
+          =&amp; -\log_{10}(x_{\text{H}^+}f_{\text{H}^+}^{(*)})
+          
+\end{aligned}\]</span>
+<p>不同浓度标度pH计算的转化是必要的，这是酸碱度比较的基础。</p>
+<ol style="list-style-type: decimal">
+<li>摩尔分数浓度</li>
+</ol>
+<span class="math display">\[\begin{aligned}
+\text{pH} =&amp; \text{pH}_x+\log_{10}(M_{w}\cdot 1\frac{\text{mol}}{\text{kg}})  \\
+          \approx&amp; \text{pH}_{x}-1.74436
+          
+\end{aligned}\]</span>
+<ol start="2" style="list-style-type: decimal">
+<li>摩尔体积浓度</li>
+</ol>
+<span class="math display">\[\begin{aligned}
+\text{pH} =&amp; \text{pH}_c-\log_{10}(\frac{1}{\rho_0}\times 10^{3}\frac{\text{kg}}{m^3})
+\end{aligned}\]</span>
+<p>其中，<span class="math inline">\(\rho_0(\text{kg} m^{-3})\)</span>所指的是溶剂的密度,一般认为是在纯水的条件下。而由于温度对密度影响较小，因而相关度比较高，近似可以认为<span class="math inline">\(\text{pH}_{c} \approx \text{pH}\)</span>.</p>
+</div>
+<div id="ph近似估算" class="section level2" number="1.3">
+<h2><span class="header-section-number">1.3</span> pH近似估算</h2>
+<p>基于pH的定义，再加上一些简化的假定，可以得到pH的近似值。</p>
+<p>1.一种方式是：<strong>假定活度系数<span class="math inline">\(\gamma_{\text{H}^+}\)</span>设为定值,那么pH只依赖于游离-<span class="math inline">\(H^+\)</span>质量摩尔浓度。</strong><br>
+<span class="math inline">\(\text{pH}_{F}=-\log_{10}(m_{H^+})\)</span>.<br>
+而这种假定<span class="math inline">\(\gamma_{\text{H}^+}=1\)</span>{{< hl-text "red" >}}只适用于高度稀释的溶液，对应到环境中，其相对湿度接近100%{{< /hl-text >}}。</p>
+2.另一种方式。<strong>利用<span class="math inline">\(H^+-anion\)</span> pair(阴阳离子对) 的平均摩尔离子活度系数来代替<span class="math inline">\(\gamma_{\text{H}^+}\)</span></strong>,i.e.,<span class="math inline">\(\gamma_{\text{H}^+}=\gamma_{\pm,H,X}\)</span>,其中X是<strong>一价阴离子</strong>，例如<span class="math inline">\(HSO_4^-,NO_3^-,Cl^-\)</span><br>
+这种计算是<strong>半定量</strong>的，但是能够捕捉到离子活度系数随着氢离子液相浓度的增加而增加（通常伴随着相对湿度的减小）。<br>
+<p style="text-align: center;">
+<span class="math inline">\(\text{pH}_\pm(H,X)=-\log_{10}(\text{m}^+\gamma_{\pm,H,X})\)</span>
+</p>
+<p>但是这种估计方法和实际的pH偏差和特定单个离子的活度系数有关，<span class="math inline">\(\text{pH}_\pm(H,X)-\text{pH}=\frac{1}{2}\log_{10}(\frac{\gamma_{\text{H}^+}}{\gamma_{\text{X}^-}})\)</span>,在高度稀释的电解质水溶液中偏差较小，并且与气溶胶组成有关。</p>
+<p>3.还有一种方式是：<strong><span class="math inline">\(\text{pH}_F\)</span>使用总H +质量摩尔浓度，即溶解H+和<span class="math inline">\(HSO_4^-\)</span>之和</strong></p>
+<p style="text-align: center;">
+<span class="math inline">\(\text{pH}_T=-\log_{10}(\text{m}^++\text{m}_{HSO_4^-})\)</span>
+</p>
+</div>
+<div id="酸度和ph" class="section level2" number="1.4">
+<h2><span class="header-section-number">1.4</span> 酸度和pH</h2>
+<p>pH值表征酸度有明显的特征：酸度的增加伴随着pH值的降低，反之亦然;显然，pH值变化代表了相对较大的酸度变化。</p>
+<p>pH值的范围为0~14，更大更小都可以，没有限制。
+目前的研究表明，云滴的pH值范围为2~7之间；细粒子的pH值是双峰型(bimodal),一部分pH范围为1~3，另一部分范围为4~5，这部分主要是受到沙尘(dust)、海洋飞沫(sea spray)、生物质燃烧(biomass burning).</p>
+<p>测量单个颗粒物或单个云滴是不现实的（小体积和与之相关液体体积的测定难以实现），目前的科学研究测量pH是通过：1，收集更大体积的样品(例如，云水的水滴总体)2.采用的其他方法，包括气溶胶和气相组成的测量和应用热力学模型(第2.6节)计算pH值.</p>
+<p>测定pH值的两种方法，1.电极法和2.比色法(colorimetric methods)<br>
+它们都要求溶液十分稀释，且.要求样品与对比样本的组分相似。并且采样大体积时可能干扰了酸度（混合不同样品）。</p>
+</div>
+<div id="计算ph值的热力学模型" class="section level2" number="1.5">
+<h2><span class="header-section-number">1.5</span> 计算pH值的热力学模型</h2>
+</div>
+</div>
