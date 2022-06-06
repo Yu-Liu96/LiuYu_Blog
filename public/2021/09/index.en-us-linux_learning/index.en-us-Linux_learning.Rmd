@@ -1,0 +1,16 @@
+---
+title: "Linux_learning"
+author: "LiuYu"
+date: '2021-09-21'
+slug: index.en-us-Linux_learning
+categories: Computer Sciences
+tags: Linux
+---
+
+# 文件
+# 文件拥有及权限概念
+
+文件拥有者最基本的就是三类概念:`r blogdown::shortcode_html("hl-text","red")`(1)使用者(user),(2)群组(group),(3)非本群组外的其他人(others)`r blogdown::shortcode_html("/hl-text")`
+
+`ls-al`查看文件属性,ls是`list`的意思,重点在于显示文件名称与相关属性.
+
